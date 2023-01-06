@@ -18,7 +18,7 @@ def add1():
             elif operator == "/":
                 print("{} {} {} = {}".format(a, operator, b, calc.div(a, b)))
         else:
-            print("Unknown operator: Available operator: +, -, * and /")
+            print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
     else:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
