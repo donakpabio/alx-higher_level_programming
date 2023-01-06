@@ -5,7 +5,7 @@ import sys
 def add1():
     a = 0
     for n in range(1, len(sys.argv)):
-        a = a + long(sys.argv[n])
+        a = a + int(sys.argv[n])
     print("{}".format(a))
 
 
