@@ -6,7 +6,8 @@ def add1():
     a = 0
     for n in range(1, len(sys.argv)):
         a = a + int(sys.argv[n])
-    print("{}".format(a));
+    print("{}".format(a))
+
 
 if __name__ == "__main__":
     add1()
