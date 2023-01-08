@@ -9,5 +9,6 @@ def max_integer(my_list=[]):
         max = my_list[n] if my_list[n] > max else max
     return max
 
+
 if __name__ == "__main__":
     max_integer(my_list=[])
