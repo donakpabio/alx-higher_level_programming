@@ -12,5 +12,6 @@ def print_matrix_integer(matrix=[[]]):
     if len(matrix) == 0 or matrix is None:
         print("{}".format(""))
 
+
 if __name__ == "__main__":
     print_matrix_integer(matrix=[[]])
