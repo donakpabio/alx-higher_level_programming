@@ -6,7 +6,6 @@ def complex_delete(a_dictionary, value):
     for k, v in a_dictionary.items():
         if v == value:
             rem.append(k)
-    
     for n in range(len(rem)):
         del a_dictionary[rem[n]]
     return a_dictionary
