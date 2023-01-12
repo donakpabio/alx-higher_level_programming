@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def roman_to_int(roman_string):
+def roman_to_int(roman_string) -> int:
     if roman_string is not None or len(roman_string) > 0:
         rom = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
         v = 0
@@ -11,7 +11,7 @@ def roman_to_int(roman_string):
             else:
                 v = v + rom[roman_string[n]]
         return v
-    return None
+    return 0
 
 
 if __name__ == "__main__":
