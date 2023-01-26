@@ -3,9 +3,9 @@
 
 def safe_print_integer_err(value):
     try:
-        print("{:d}".format(float(value)))
+        print("{:d}".format(int(value)))
         return True
-    except (TypeError, ValueError) as err:
+    except ValueError as err:
         print("Exception: {}".format(err))
 
 
