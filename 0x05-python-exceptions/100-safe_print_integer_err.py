@@ -3,7 +3,7 @@
 
 def safe_print_integer_err(value):
     try:
-        print("{:d}".format(int(value)))
+        print("{:d}".format(float(value)))
         return True
     except (TypeError, ValueError) as err:
         print("Exception: {}".format(err))
