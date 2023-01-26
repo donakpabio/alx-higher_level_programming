@@ -2,7 +2,7 @@
 
 
 def safe_print_list(my_list=[], x=0):
-    if x > 0:
+    try:
         for n in range(x):
             try:
                 print("{}".format(my_list[n]), end='')
@@ -11,7 +11,8 @@ def safe_print_list(my_list=[], x=0):
                 return n
         print("")
         return n + 1
-    return 0
+    except UnboundLocalError:
+        return 0
 
 
 if __name__ == "__main__":
